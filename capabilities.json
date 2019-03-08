@@ -1,0 +1,42 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Values",
+            "name": "values",
+            "kind": "GroupingOrMeasure"
+        }
+    ],
+    "objects": {
+        "map": {
+            "displayName": "Map",
+            "properties": {
+                "baseLayer": {
+                    "displayName": "Base Layer",
+                    "description": "Set the base layer with a url",
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "values": {
+                        "min": 1,
+                        "max": 5
+                    }
+                }
+            ],
+            "table": {
+                "rows": {
+                    "for":{
+                        "in": "values"
+                    }
+                }
+            }
+        }
+    ]
+}

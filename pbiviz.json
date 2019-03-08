@@ -1,0 +1,29 @@
+{
+  "visual": {
+    "name": "mapplugin",
+    "displayName": "map_plugin",
+    "guid": "mapplugin0609AA9AAC674049900590B6C077DD11",
+    "visualClassName": "Visual",
+    "version": "1.0.0",
+    "description": "Leaflet Custom Visual",
+    "supportUrl": "",
+    "gitHubUrl": ""
+  },
+  "apiVersion": "2.3.0",
+  "author": {
+    "name": "Jurgen de Vries",
+    "email": "jurgen.de.vries@ordina.nl"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [
+    "node_modules/leaflet/dist/leaflet.js",
+    "inject.js",
+    "node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js"
+  ],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}
